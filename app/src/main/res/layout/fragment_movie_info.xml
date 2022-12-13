@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/tb_info_movie"
+        layout="@layout/toolbar_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/ytp_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_info_movie" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_default"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/ytp_trailer"
+        app:layout_constraintTop_toBottomOf="@id/ytp_trailer">
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            tools:text="Movie Title" />
+
+        <TextView
+            android:id="@+id/tv_movie_genres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Action" />
+
+        <TextView
+            android:id="@+id/tv_movie_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="180 mins" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/text_overview"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_movie_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_see_review"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_movie"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@drawable/background_button_filled"
+        android:text="@string/btn_add_favorite"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_micro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

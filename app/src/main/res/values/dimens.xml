@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_xmicro">10sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_default">18sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_xlarge">36sp</dimen>
+    <dimen name="text_xxlarge">40sp</dimen>
+
+    <dimen name="margin_micro">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">64dp</dimen>
+    <dimen name="navigation_drawer_header_height">180dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="dialog_radius">15dp</dimen>
+
+
+</resources>

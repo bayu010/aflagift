@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Alfa Gift Movies</string>
+
+    <string name="empty">No Data</string>
+    <string name="failure">Failure</string>
+    <string name="loading">Loading…</string>
+    <string name="ok">OK</string>
+    <string name="message">message</string>
+    <string name="close">Close</string>
+    <string name="label_error">Error</string>
+
+    <!--  Text  -->
+    <string name="text_movie_info">Movie Info</string>
+    <string name="text_empty_data">Empty Data List</string>
+    <string name="text_see_more">See More >>></string>
+    <string name="text_top_rated">Top Rated</string>
+    <string name="text_now_playing">Now Playing</string>
+    <string name="text_upcoming">Upcoming</string>
+    <string name="text_recommendation">Recommendation</string>
+    <string name="text_fav_movie">Favorite Movie</string>
+    <string name="text_favorite_movies">Your Favorite Movies</string>
+    <string name="text_series">Series</string>
+    <string name="text_overview">Overview</string>
+    <string name="text_read_more">Read more</string>
+    <string name="text_read_less">Read less</string>
+    <string name="text_review">Movie Reviews</string>
+    <string name="text_see_review">See Reviews >></string>
+
+    <!--  Dummy Text  -->
+    <string name="text_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!--  Button Text  -->
+    <string name="btn_detail_movie">Detail Movie</string>
+    <string name="btn_add_favorite">Add to Favorite</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_xlarge"
+        android:layout_marginRight="@dimen/margin_xlarge">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/background_message_dialog"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_large">
+
+        <FrameLayout
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_default"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/margin_small"
+                android:visibility="gone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_delete" />
+
+        </FrameLayout>
+
+        <LinearLayout
+                android:id="@+id/group_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_default"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_large"
+                    android:paddingBottom="@dimen/margin_large"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_large"
+                    tools:text="Title" />
+
+            <!--<View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/gray" />-->
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_default"
+                android:gravity="center"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group_title"
+                tools:text="@string/message" />
+
+        <!--<View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/btn_dialog"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_message" />-->
+
+        <LinearLayout
+                android:id="@+id/group_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_message">
+
+            <TextView
+                    android:id="@+id/btn_dialog_negative"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_large"
+                    android:paddingBottom="@dimen/margin_large"
+                    android:text="@string/close"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/btn_dialog_positive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_large"
+                    android:paddingBottom="@dimen/margin_large"
+                    android:text="@string/ok"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_default"
+                    android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
